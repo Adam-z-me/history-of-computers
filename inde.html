@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>History of Computers</title>
+  <style>
+    body {
+      background-color: lightgreen;
+      font-family: Helvetica;
+      font-weight: bold;
+    }
+    h1, h2, h3 {
+      color: gray;
+      text-align: center;
+      border-bottom: 1px solid black;
+    }
+    nav {
+      text-align: center;
+      margin: 15px;
+    }
+    nav a {
+      margin: 10px;
+      text-decoration: underline;
+    }
+    footer {
+      color: #333;
+      text-align: center;
+      margin-top: 20px;
+    }
+    section {
+      margin: 20px;
+      padding: 10px;
+    }
+    .toggle-btn {
+      display: block;
+      margin: 0 auto;
+      padding: 8px 15px;
+      background: darkgreen;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    <img src="path/to/computers.jpg" alt="History and Evolution of Computers" width="150" height="300">
+    <br>History and Evolution of Computers
+  </h1>
+
+  <p>The oldest known mathematical aid for calculations is the ABACUS.</p>
+
+  <h2>Computer Generations</h2>
+  <ol>
+    <li><strong>1st Generation:</strong> Relied on vacuum tubes and used magnetic drum memories.</li>
+    <li><strong>2nd Generation:</strong> Relied on transistors and used magnetic core memories.</li>
+  </ol>
+
+  <nav>
+    <a href="#computer-generations">Computer Generations</a>
+    <a href="#examples">Examples</a>
+  </nav>
+
+  <p>
+    <a href="https://www.ladyadaagustalovelace.com" target="_blank">Lady Ada Augusta Lovelace</a>, known as the first programmer, advised
+    <a href="https://www.charlesbabbage.com" target="_blank">Charles Babbage</a> to use binary numbers (0s & 1s) instead of the decimal system.
+  </p>
+
+  <h2>The First Computing Device</h2>
+  <img src="path/to/abacus.jpg" alt="The Abacus">
+
+  <section id="computer-generations" style="background: #333; color: yellow; font-size: 20px;">
+    <button class="toggle-btn" onclick="toggleVisibility('genContent')">Toggle Computer Generations Info</button>
+    <div id="genContent">
+      <h3>Computer Generations</h3>
+      <p>There are four computer generations. To know more, click <a href="https://www.computergenerations.com" target="_blank">here</a>.</p>
+    </div>
+  </section>
+
+  <section id="examples" style="color: red; font-size: 25px;">
+    <button class="toggle-btn" onclick="toggleVisibility('exampleContent')">Toggle Examples</button>
+    <div id="exampleContent">
+      <h3>Examples of Computers Through Generations</h3>
+      <ol>
+        <li>ENIAC, UNIVAC</li>
+        <li>Transistors</li>
+        <li>LSIC, VLI</li>
+        <li>Integrated Circuits (IC)</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Quick Links</h3>
+    <a href="https://www.understand.com" target="_blank">Understanding ICT</a><br>
+    <a href="https://www.history.com" target="_blank">History of Computers</a>
+    <h2>Contact Us</h2>
+    <p>Tel: +256 771721674 or +256 783391083</p>
+    <p>Email: <a href="mailto:cobol@gmail.com" style="color: blue;">cobol@gmail.com</a></p>
+    &copy; 2025 History and Evolution of Computers. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleVisibility(id) {
+      const section = document.getElementById(id);
+      if (section.style.display === 'none') {
+        section.style.display = 'block';
+      } else {
+        section.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
